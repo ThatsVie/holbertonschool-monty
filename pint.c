@@ -1,5 +1,5 @@
 #include "monty.h"
-/*
+/**
  * pint - prints the value at the top of the stack, followed by a new line.
  * @current_stack: Pointer to pointer to the stack in stack_t struct.
  * @line_number: Line number of the read opcode.

@@ -24,7 +24,6 @@ void push(stack_t **stack, unsigned int line_number)
 	}
 
 	value = atoi(input_token);/*Convert tokenized string to integer*/
-	
 	/*Check if the token contains only digits, '+' or '-' characters.*/
 	if (strspn(input_token, "0123456789+-") != strlen(input_token))
 	{

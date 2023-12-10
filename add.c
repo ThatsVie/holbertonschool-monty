@@ -6,7 +6,7 @@
  */
 void add(stack_t **stack, unsigned int line_number)
 {
-       	/* Check if the stack or stack pointer is NULL. */
+	/* Check if the stack or stack pointer is NULL. */
 	if (stack == NULL || *stack == NULL)
 	{
 		/* Print an error message if the stack is empty. */

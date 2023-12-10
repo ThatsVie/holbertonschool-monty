@@ -18,5 +18,4 @@ void pop(stack_t **stack, unsigned int line_number)
 	removed_element = *stack;/*Assign address of top node to temp pointer.*/
 	*stack = (*stack)->next;/*Move stack point to next,removing top node.*/
 	free(removed_element);/*Free the memory of removed node.*/
-	
 }

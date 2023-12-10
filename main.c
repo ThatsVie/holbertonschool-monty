@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	while (read != -1)
 	{
 		/* Extract the opcode from the current line. */
-		opcode = strtok(line, " \t\n");
+		opcode = strtok(current_line, " \t\n");
 
 		/* If opcode is NULL, line is empty; increment line number and continue. */
 		if (opcode == NULL)
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 		}
 
 		 /* Execute the opcode by calling execute_opcode function. */
-		execute_opcode(opcode, &stack, line_number);
+		execute_opcode(opcode, &stack_top, line_number);
 
 		/* Read the next line and update the line number. */
 		read = getline(&current_line, &length, bytecode_file);
@@ -58,7 +58,7 @@ int main(int argc, char **argv)
 	free(current_line);
 
 	/* Free the entire stack. */
-	free_stack(stack);
+	free_stack(stack_top);
 
 	/* Close the Monty bytecode file. */
 	fclose(bytecode_file);

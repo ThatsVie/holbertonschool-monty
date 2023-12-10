@@ -1,4 +1,4 @@
-#inlude "monty.h"
+#include "monty.h"
 /**
  * swap - swaps the top two elements of the stack
  * @stack: pointer to pointer to top of stack
@@ -10,7 +10,7 @@ void swap(stack_t **stack, unsigned int line_number)
 	int temp;
 
 	/* Check if the stack is too short. */
-	if (current == NULL || current->next == NULL)
+	if (top_node == NULL || top_node->next == NULL)
 	{
 		fprintf(stderr, "L%d: can't swap, stack too short\n", line_number);
 		exit(EXIT_FAILURE);

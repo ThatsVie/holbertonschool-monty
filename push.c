@@ -40,7 +40,7 @@ void push(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 
-	new_element->n = pushed_value;/*set interger value of new node*/
+	new_element->n = value;/*set interger value of new node*/
 	new_element->prev = NULL;/*Set previous pointer of new node to NULL.*/
 	new_element->next = *stack;/*next pointer of new to current top stack*/
 

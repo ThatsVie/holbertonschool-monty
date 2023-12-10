@@ -1,4 +1,4 @@
-#include "monty.c"
+#include "monty.h"
 /**
  * main - Monty Bytecode Interpreter
  * @argc: The count of command line arguments.

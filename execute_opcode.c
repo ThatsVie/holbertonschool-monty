@@ -16,6 +16,7 @@ void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
+		{NULL, NULL}
 	};
 	/* Loop through the array of instructions. */
 	while (instructions[i].opcode != NULL)
